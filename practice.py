@@ -1,4 +1,4 @@
 a = 2
-b = 4
-c = a + b
+b = 3
+c = a + b + 7
 print("c eredménye : " + str(c) )
