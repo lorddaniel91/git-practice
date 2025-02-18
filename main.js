@@ -8,6 +8,7 @@ const properties = ['Kicsi','Vagány','Nagy','Hóbortos','Bozontos','Fekete','B�
 
 const names = ['Radiátor','Vinetú','Kevin','Aranka','Viking','Matilda','Stormtrooper','Chewbacka','Géza','Smöcömdöför','Hardy','Criss'];
 
+const getBestProperties = () => {
 const getProperty = () => {
 
     const propertiesLength = properties.length
@@ -15,6 +16,7 @@ const getProperty = () => {
     return properties[getRandomInt(propertiesLength)];
 }
 
+const getAwesomeName = () => {
 const getName = () => {
 
     const namesLength = names.length;
