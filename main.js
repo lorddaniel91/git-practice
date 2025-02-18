@@ -4,27 +4,26 @@ const hardyName = 'Hardy';
 
 console.log('Stitofi ficko a ', hardyName);
 
-const tulajdonsagok = ['Kicsi','Vagány','Nagy','Hóbortos','Bozontos','Fekete','Büdös','Vasderekú','Kankós','Bánatos','Sith'];
+const properties = ['Kicsi','Vagány','Nagy','Hóbortos','Bozontos','Fekete','Büdös','Vasderekú','Kankós','Bánatos','Sith'];
 
-const nevek = ['Radiátor','Vinetú','Kevin','Aranka','Viking','Matilda','Stormtrooper','Chewbacka','Géza','Smöcömdöför','Hardy','Criss'];
+const names = ['Radiátor','Vinetú','Kevin','Aranka','Viking','Matilda','Stormtrooper','Chewbacka','Géza','Smöcömdöför','Hardy','Criss'];
 
-const getTulajdonsag = () => {
+const getProperty = () => {
 
-    const hossz = tulajdonsagok.length
+    const propertiesLength = properties.length
 
-    return tulajdonsagok[getRandomInt(hossz)];
-
+    return properties[getRandomInt(propertiesLength)];
 }
 
-const getNev = () => {
+const getName = () => {
 
-    const hossz = nevek.length;
+    const namesLength = names.length;
 
-    return nevek[getRandomInt(hossz)];
+    return names[getRandomInt(namesLength)];
 }
 
 const getRandomInt = (max) => Math.floor(Math.random() * max);
 
 console.log('Az Új Neved : ');
 
-console.log(`${getTulajdonsag()} ${getNev()}`);
+console.log(`${getProperty()} ${getName()}`);
